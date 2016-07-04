@@ -1,1 +1,1 @@
-Hello, World!
+<php? echo date("yy-mm-dd");?>
