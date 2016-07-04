@@ -5,9 +5,6 @@ $dbconn = pg_connect("host=ec2-174-129-29-118.compute-1.amazonaws.com dbname=ddb
     or die('Could not connect: ' . pg_last_error());
 
 // Performing SQL query
-$query = 'CREATE TABLE authors (name text)';
-$result = pg_query($query) or die('Query failed 1: ' . pg_last_error());
-
 $query = 'SELECT * FROM authors';
 $result = pg_query($query) or die('Query failed 2: ' . pg_last_error());
 
